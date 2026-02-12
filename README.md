@@ -2,6 +2,8 @@
 # 🌌 VidyaMitra: The Future of Career Sovereignty
 
 
+ppt link: https://www.canva.com/design/DAHA_SRpOEE/GZPFU5RrgXGYkw04OnJqsw/edit?utm_content=DAHA_SRpOEE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 
 > **"Your career isn't a ladder; it's a dynamic ecosystem. VidyaMitra is the AI sentinel that guards your growth."**
 
