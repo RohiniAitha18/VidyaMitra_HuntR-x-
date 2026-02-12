@@ -1,5 +1,5 @@
 {
-  "name": "Copy of VidyaMitra: AI Career Agent",
+  "name": "VidyaMitra",
   "description": "An AI-powered career platform for resume analysis, skill mapping, interview prep, and personalized learning paths.",
   "requestFramePermissions": [
     "camera",

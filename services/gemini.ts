@@ -9,7 +9,6 @@ const getAiClient = () => new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 /**
  * Analyzes a resume file or text using Gemini 3 Flash.
- * Flash models are resilient for multimodal JSON extraction.
  */
 export const analyzeResume = async (fileData?: { data: string, mimeType: string }, text?: string, roastMode?: boolean) => {
   const ai = getAiClient();
@@ -62,7 +61,7 @@ export const analyzeResume = async (fileData?: { data: string, mimeType: string 
     return JSON.parse(response.text || '{}');
   } catch (e) {
     console.error("Gemini analyzeResume Error:", e);
-    throw new Error("Failed to analyze resume. The AI might be temporarily unavailable.");
+    throw new Error("Failed to analyze resume.");
   }
 };
 
@@ -97,7 +96,9 @@ export const getSalaryInsights = async (role: string, location: string, lat?: nu
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
-      contents: `Provide a detailed salary benchmark for a ${role} in ${location}. Include local market data, top employers in that specific area, and cost-of-living context.`,
+      contents: `You are a compensation analyst. Provide a detailed salary benchmark for a ${role} in ${location}. 
+      CRITICAL: Start your response with a clear predicted salary range in bold, e.g., "**$120,000 - $180,000 USD**".
+      Follow up with local market data, top employers in that specific area, and cost-of-living context.`,
       config: {
         tools: hasCoords ? [{ googleSearch: {} }, { googleMaps: {} }] : [{ googleSearch: {} }],
         toolConfig: hasCoords ? {
@@ -128,7 +129,7 @@ export const generateNetworkingDraft = async (type: 'linkedin' | 'email' | 'foll
       model: 'gemini-3-flash-preview',
       contents: `Draft a professional ${type} message for a ${role} position. Context for the connection: ${context}. Make it concise, high-impact, and authentically human.`,
       config: {
-        systemInstruction: "You are a professional networking coach. You write messages that build genuine rapport and avoid sounding robotic or transactional."
+        systemInstruction: "You are a professional networking coach."
       }
     });
     return response.text;
@@ -208,7 +209,7 @@ export const getInterviewQuestions = async (role: string, resumeContext?: string
     const response = await ai.models.generateContent({
       model: 'gemini-3-pro-preview',
       contents: `Initiate a technical mock interview for a ${role} candidate. ${resumeContext ? `Candidate Background: ${resumeContext}` : ''}. Start with a targeted and challenging first question.`,
-      config: { systemInstruction: "You are a senior technical lead conducting a job interview. Be professional, observant, and focus on deep technical understanding." }
+      config: { systemInstruction: "You are a senior technical lead conducting a job interview." }
     });
     return response.text;
   } catch (e) {
