@@ -1,11 +1,11 @@
 
 # 🌌 VidyaMitra: The Future of Career Sovereignty
 
-![VidyaMitra Hero](https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1200&auto=format&fit=crop)
+
 
 > **"Your career isn't a ladder; it's a dynamic ecosystem. VidyaMitra is the AI sentinel that guards your growth."**
 
-VidyaMitra (Sanskrit for *Knowledge Friend*) is not just another job board or resume builder. It is a **hyper-intelligent, voice-native career engine** designed to bridge the gap between human potential and market reality. 
+VidyaMitra  is not just another job board or resume builder. It is a **hyper-intelligent, voice-native career engine** designed to bridge the gap between human potential and market reality. 
 
 ---
 
@@ -63,8 +63,6 @@ The interface is built on **Glassmorphism 2.0**. We use:
 
 VidyaMitra is designed to be a **Long-Term Career Sentinel**. It tracks your growth over weeks, alerts you when your skills are becoming obsolete, and proactively finds the mentors you need *before* you know you need them.
 
-### **The Judges' Verdict:**
-> "VidyaMitra takes the abstract concept of 'Career Guidance' and turns it into a high-performance, real-time engine that feels like having a Silicon Valley recruiter in your pocket."
 
 ---
 
