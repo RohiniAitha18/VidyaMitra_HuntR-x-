@@ -21,7 +21,7 @@ Forget cold LinkedIn DMs. VConnect uses **AI Synergy Scoring** to match Mentees 
 Step into the "Hot Seat." Our Mock Interviewer isn't a text box—it's a **live, observing entity**.
 - **Real-Time Analysis:** It listens to your tone, pauses, and technical depth.
 - **Latency-Free:** Powered by native audio protocols for a human-like conversation.
-- ![Mock Interview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFndXJreW1rNXFmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjP9VV8SQu9y0/giphy.gif)
+- ![Mock Interview]
 
 ### 3. 🍖 The Resume Roast (constructor vs. destructor)
 Why get a standard critique when you can handle the truth?
